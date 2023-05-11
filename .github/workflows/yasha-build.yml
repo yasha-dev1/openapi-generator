@@ -16,4 +16,5 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Publish package
+        working-directory: ./modules/openapi-generator-cli
         run: mvn --batch-mode deploy
